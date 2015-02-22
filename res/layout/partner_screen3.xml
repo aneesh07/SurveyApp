@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/partner_scr"
+    android:orientation="vertical"
+    tools:ignore="ObsoleteLayoutParam,HardcodedText,SpUsage" >
+
+    <TextView
+        android:id="@+id/pioneerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="112dp"
+        android:text="Pioneer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/excelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ralliesTextView"
+        android:layout_below="@+id/ralliesTextView"
+        android:layout_marginTop="60dp"
+        android:text="Excel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/ralliesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pioneerTextView"
+        android:layout_below="@+id/pioneerTextView"
+        android:layout_marginTop="60dp"
+        android:text="Rallies"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/next_but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/next_button" />
+
+    <RadioGroup
+        android:id="@+id/pioneerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pioneerTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/pioneerRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/pioneerRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/pioneerRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pioneerRadioBut2"
+            android:layout_alignBottom="@+id/pioneerRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pioneerRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/ralliesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ralliesTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ralliesRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/ralliesRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/ralliesRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ralliesRadioBut2"
+            android:layout_alignBottom="@+id/ralliesRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ralliesRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/excelRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/excelTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/excelRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/excelRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/excelRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/excelRadioBut2"
+            android:layout_alignBottom="@+id/excelRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/excelRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+</RelativeLayout>

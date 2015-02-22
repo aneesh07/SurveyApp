@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/partner_scr"
+    android:orientation="vertical"
+    tools:ignore="ObsoleteLayoutParam,HardcodedText,SpUsage" >
+
+    <TextView
+        android:id="@+id/monsantoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="112dp"
+        android:text="Monsanto"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/cheminovaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tatarallisTextView"
+        android:layout_below="@+id/tatarallisTextView"
+        android:layout_marginTop="60dp"
+        android:text="Cheminova"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tatarallisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/monsantoTextView"
+        android:layout_below="@+id/monsantoTextView"
+        android:layout_marginTop="60dp"
+        android:text="Tata Rallis"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/next_but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/next_button" />
+
+    <RadioGroup
+        android:id="@+id/monsantoRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monsantoTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/monsantoRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/monsantoRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/monsantoRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/monsantoRadioBut2"
+            android:layout_alignBottom="@+id/monsantoRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/monsantoRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/tatarallisRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tatarallisTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tatarallisRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/tatarallisRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/tatarallisRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tatarallisRadioBut2"
+            android:layout_alignBottom="@+id/tatarallisRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tatarallisRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cheminovaRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cheminovaTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/cheminovaRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/cheminovaRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/cheminovaRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cheminovaRadioBut2"
+            android:layout_alignBottom="@+id/cheminovaRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/cheminovaRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+</RelativeLayout>

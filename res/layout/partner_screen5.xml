@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/partner_scr"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,SpUsage" >
+
+    <TextView
+        android:id="@+id/ankurTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="112dp"
+        android:text="Ankur"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/mahycoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ankurTextView"
+        android:layout_below="@+id/ankurTextView"
+        android:layout_marginTop="60dp"
+        android:text="Mahyco"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/next_but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/next_button" />
+
+    <RadioGroup
+        android:id="@+id/ankurRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ankurTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ankurRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            tools:ignore="SpUsage" />
+
+        <RadioButton
+            android:id="@+id/ankurRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/ankurRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/mahycoRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mahycoTextView"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/mahycoRadioBut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dealer"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/mahycoRadioBut2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Distributor"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/mahycoRadioBut3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mahycoRadioBut2"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/mahycoRadioBut2"
+            android:text="Retailer"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </RadioGroup>
+
+</RelativeLayout>

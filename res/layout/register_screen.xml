@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_scr"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <EditText
+        android:id="@+id/block_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_but"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="numberSigned"
+        android:singleLine="true" 
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd"
+        />
+
+    <EditText
+        android:id="@+id/district_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regtextView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="XYZ"
+        android:singleLine="true" 
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd"
+        />
+
+    <EditText
+        android:id="@+id/address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regtextView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="House No, Street Name"
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd"
+         />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regtextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Aneesh Pradeep"
+        android:singleLine="true" 
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd"
+        />
+
+    <Button
+        android:id="@+id/save_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/save_button" />
+
+    <TextView
+        android:id="@+id/regtextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/block_edit"
+        android:layout_alignLeft="@+id/regtextView3"
+        android:layout_marginBottom="17dp"
+        android:text="Block"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/regtextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/district_edit"
+        android:layout_alignLeft="@+id/regtextView2"
+        android:layout_marginBottom="15dp"
+        android:text="District"
+          android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/regtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address_edit"
+        android:layout_alignLeft="@+id/regtextView1"
+        android:layout_marginBottom="16dp"
+        android:text="Address"
+          android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/regtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
